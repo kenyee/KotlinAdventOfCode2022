@@ -1,14 +1,5 @@
 import java.util.concurrent.atomic.AtomicInteger
 
-enum class Direction(val deltaX: Int, val deltaY: Int) {
-    Up(0, -1),
-    Down(0, 1),
-    Right(1, 0),
-    Left(-1, 0)
-}
-
-data class Tree(val row: Int, val col: Int)
-
 fun main() { // ktlint-disable filename
     fun sumInnerTreesInDirection(
         visible: Array<Array<Boolean>>,
