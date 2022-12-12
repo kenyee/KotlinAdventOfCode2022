@@ -46,17 +46,17 @@ fun main() { // ktlint-disable filename
             var operation = Squared()::exec
             if (old == "") operation = Multiply(opValue.toLong())::exec
             if (op == "+") operation = Add(opValue.toLong())::exec
-//                val operation = when (op) {
-//                    "*" -> {
-//                        if (old == "old") Squared()::exec else Multiply(opValue.toInt())::exec
-//                    }
-//                    "+" -> {
-//                        Add(opValue.toInt())::exec
-//                    }
-//                    else -> {
-//                        throw IllegalArgumentException("Unexpected op: $op")
-//                    }
+//            val operation2 = when (op) {
+//                "*" -> {
+//                    if (old == "old") Squared()::exec else Multiply(opValue.toLong())::exec
 //                }
+//                "+" -> {
+//                    Add(opValue.toInt())::exec
+//                }
+//                else -> {
+//                    throw IllegalArgumentException("Unexpected op: $op")
+//                }
+//            }
 
             monkeys.add(
                 Monkey(
