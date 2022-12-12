@@ -30,3 +30,9 @@ fun Position.isAdjacent(pos: Position) =
 
 operator fun Position.plus(dir: Direction) =
     Position(this.x + dir.deltaX, this.y + dir.deltaY)
+
+fun BigInteger.lcm(number2: BigInteger): BigInteger {
+    val gcd = this.gcd(number2)
+    val absProduct = this.multiply(number2).abs()
+    return absProduct.divide(gcd)
+}
